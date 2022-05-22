@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  {% load static %}
+<title>{% block title %}StorePet {% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src=" {% static 'img\icon\logo-pet.png' %}" width="64px" height="64px" /></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/galeria">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/servicio">servicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="galeria">
+    <h1>Nuestro servicios</h1>
+    <div class="linea"></div>
+    <div class="contenedor-imagenes">
+        <div class="imagen">
+            <img src="{%  static 'img\servicios\bandana.jpg'%}" alt="">
+          </div>
+          <div class="imagen">
+          <img src="{%  static 'img\servicios\pelu-canina.jpg'%}" alt="">
+        </div> 
+        <div class="imagen">
+          <img src="{%  static 'img\servicios\2075_higiene_felina_final_web.jpg'%}" alt="">
+        </div> 
+        <div class="imagen">
+          <img src="{%  static 'img\servicios\ima1.jpeg'%}" alt="">
+        </div> 
+        <div class="imagen">
+          <img src="{%  static 'img\servicios\holi.jpg'%}" alt="">
+        </div>
+        <div class="imagen">
+          <img src="{%  static 'img\servicios\camadegato.jpg'%}" alt="">
+        </div>
+    </div>
+    <!-- Footer -->
+  <footer>
+    <div class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src=" {% static 'img\icon\logo-pet.png' %}">
+                       </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <P>Eileen Sepúlveda Silva </P>
+            </div>
+           </div>
+          <div class="grupo-2">
+              <small>&copy; 2022 <b>StorePet</b> todos los Derechos Reservados </small>
+    </div>            
+</footer>
+
+  <!-- script -->
+  <script src="{% static 'js/jquery/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/popper/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>  
+
+</body>
+</html>
+ 

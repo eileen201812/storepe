@@ -1,0 +1,122 @@
+<html>
+
+<head>
+  {% load static %}
+<title>{% block title %}StorePet {% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src=" {% static 'img\icon\logo-pet.png' %}" width="64px" height="64px" /></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/galeria">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/servicio">servicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- NEWS CARDS -->
+<div class="news-cards">
+  <div>
+    <img src="{% static 'img\servicios\camadegato.jpg'%}" alt="" />
+    <h3>CAMA</h3>
+    <p> Lindas camas para nuestros bebes del hogar
+    </p>
+    <select class="custom-select" id="filtroEstilo">
+      <option>cantida 1</option> 
+      <option>cantida 2</option>
+      <option>cantida 3</option>
+      <option>cantida 4</option>
+    </select>
+    <button class="btn btn-lg btn-block btn-danger py-1" type="submit" id="btnBuscador"><i
+      class="fas fa-search"></i> comprar</button> 
+  </div>
+  <div>
+    <img src="{% static 'img\servicios\ima1.jpeg'%}" alt="" />
+    <h3>Bandanas</h3>
+    <p>lindas bandanas
+    </p>
+    <select class="custom-select" id="filtroEstilo">
+      <option>cantida 1</option> 
+      <option>cantida 2</option>
+      <option>cantida 3</option>
+      <option>cantida 4</option>
+    </select>
+    <button class="btn btn-lg btn-block btn-danger py-1" type="submit" id="btnBuscador"><i
+      class="fas fa-search"></i> comprar</button>
+  </div>
+  <div>
+    <img src="{% static 'img\servicios\images3.jpg'%}" alt="" />
+    <h3>Arnes</h3>
+    <p>lindos arnes para sacar a pasear a nuestras mascotas
+    </p>
+    <select class="custom-select" id="filtroEstilo">
+      <option>cantida 1</option> 
+      <option>cantida 2</option>
+      <option>cantida 3</option>
+      <option>cantida 4</option>
+    </select>
+    <button class="btn btn-lg btn-block btn-danger py-1" type="submit" id="btnBuscador"><i
+      class="fas fa-search"></i> comprar</button>
+  </div>
+  <div>
+    <img src="{% static 'img\servicios\snacks-para-perros.jpg'%}" alt="" />
+    <h3>Snacks</h3>
+    <p>Ricos snacks para nuestras mascotas
+    </p>
+    <select class="custom-select" id="filtroEstilo">
+      <option>cantida 1</option> 
+      <option>cantida 2</option>
+      <option>cantida 3</option>
+      <option>cantida 4</option>
+    </select>
+    <button class="btn btn-lg btn-block btn-danger py-1" type="submit" id="btnBuscador"><i
+      class="fas fa-search"></i> comprar</button>
+  </div>
+</div>
+ <!-- Footer -->
+ <footer>
+  <div class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src=" {% static 'img\icon\logo-pet.png' %}">
+                     </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>SOBRE NOSOTROS</h2>
+              <P>Eileen Sepúlveda Silva </P>
+          </div>
+         </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>StorePet</b> todos los Derechos Reservados </small>
+  </div>            
+</footer>
+
+<!-- script -->
+<script src="{% static 'js/jquery/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'js/popper/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>  
+
+</body>
+</html>
